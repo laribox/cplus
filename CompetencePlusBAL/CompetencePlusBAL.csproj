@@ -40,12 +40,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PackageAbsences\Class1.cs" />
+    <Compile Include="PackageAnneeFormations\Class1.cs" />
+    <Compile Include="PackageDB\IncrementDB_BAO.cs" />
+    <Compile Include="PackageEmploisTemps\Class1.cs" />
     <Compile Include="PackageFilieres\FiliereBAO.cs" />
+    <Compile Include="PackageFormateurs\Class1.cs" />
+    <Compile Include="PackageFormations\Class1.cs" />
     <Compile Include="PackageGroupes\GroupeBAO.cs" />
+    <Compile Include="PackageModules\Class1.cs" />
+    <Compile Include="PackageModules\ModuleBAO.cs" />
+    <Compile Include="PackageNotes\NoteBAO.cs" />
+    <Compile Include="PackagePrecision\ContenuPresicionBAO.cs" />
+    <Compile Include="PackagePrecision\PrecisionBAO.cs" />
+    <Compile Include="PackagePrevisionSeances\Class1.cs" />
+    <Compile Include="PackageSeances\Class1.cs" />
     <Compile Include="PackageStagiaires\StagiaireBAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="PackageSalles\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CompetencePlusDAL\CompetencePlusDAL.csproj">
       <Project>{EE60A421-F5B8-438B-B892-851DD1E118E3}</Project>

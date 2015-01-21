@@ -34,16 +34,14 @@ namespace CompetencePlus.PackageGroupes
             this.refresh();
             filiereBindingSource.DataSource = null;
             filiereBindingSource.DataSource = new FiliereBAO().Select();
-            try
-            {
-                Groupe g = (Groupe)groupeBindingSource.Current;
-                NomLabel.Text = g.Nom;
-                CodeLabel.Text = g.Code;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+        
+                Groupe groupe = (Groupe)groupeBindingSource.Current;
+                if (groupe != null)
+                {
+                    NomLabel.Text = groupe.Nom;
+                    CodeLabel.Text = groupe.Code;
+                }
+          
         }
 
         private void groupeDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -141,6 +139,11 @@ namespace CompetencePlus.PackageGroupes
             g.Filiere = (Filiere)filiereBindingSource.Current;
             g.Description = DescriptionTextBox.Text;
            groupeBindingSource.DataSource= new GroupeBAO().FindByGroup(g);
+        }
+
+        private void groupeDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

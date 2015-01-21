@@ -9,6 +9,11 @@ using System.Windows.Forms;
 using CompetencePlus.PackageFilieres;
 using CompetencePlus.PackageStagiaires;
 using CompetencePlus.PackageGroupes;
+using CompetencePlus.PackageDB;
+using CompetencePlus.Tools;
+
+using CompetencePlus.PackageModules;
+using CompetencePlus.PackageEmploisTemps;
 
 namespace CompetencePlus
 {
@@ -22,6 +27,7 @@ namespace CompetencePlus
         private void gérerFiliereToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormGestionFiliere f = new FormGestionFiliere();
+            f.MdiParent = this;
             f.Show();
         }
 
@@ -32,25 +38,84 @@ namespace CompetencePlus
 
         private void ajouterUneInscriptionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormStagiairesInscription f = new FormStagiairesInscription();
-            f.Show();
+           
         }
 
         private void gérerLesInscriptionsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormGestionInscription f = new FormGestionInscription();
-            f.Show();
+
         }
 
         private void gérerLesStagiairesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormGestionStagiaires f = new FormGestionStagiaires();
-            f.Show();
+           
         }
 
         private void gestionDesGroupesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormGestionGroupes f = new FormGestionGroupes();
+            f.Show();
+        }
+
+        private void gérerStagiaireToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormGestionStagiaires f = new FormGestionStagiaires();
+            f.Show();
+        }
+
+        private void ajouterUneInscriptionToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormStagiairesInscription f = new FormStagiairesInscription();
+            f.Show();
+        }
+
+        private void validationDesInscriptionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormGestionInscription form = new FormGestionInscription();
+
+            form.Show();
+
+        }
+
+        private void suiviToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataBaseManagementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormGestionDB f = new FormGestionDB();
+            f.Show();
+        }
+
+        private void MenuApplication_Load(object sender, EventArgs e)
+        {
+            try
+            {
+            new DataBaseCreator(MyConnection.DataBaseName).InitialisationDatabase();
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+                this.Close();
+            }
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+
+        private void modulesToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            FormeGestionModules fr = new FormeGestionModules();
+            fr.Show();
+        }
+
+        private void mesEmploisDeTempsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormAjouterEmploitemps f = new FormAjouterEmploitemps();
             f.Show();
         }
     }

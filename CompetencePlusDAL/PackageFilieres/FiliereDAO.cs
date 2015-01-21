@@ -4,27 +4,28 @@ using System.Linq;
 using System.Text;
 using System.Data.OleDb;
 using CompetencePlus.Outils;
+using CompetencePlus.Tools;
 
 namespace CompetencePlus.PackageFilieres
 {
     public class FiliereDAO : IGestion<Filiere>
     {
-        public  void Add(Filiere f)
+        public  int Add(Filiere f)
         {
             string Requete = "Insert into Filieres(Titre,Code,Description) values ('" + f.Titre + "','" + f.Code +"','"+f.Description+ "')";
-            MyConnection.ExecuteNonQuery(Requete);
+            return MyConnection.ExecuteNonQuery(Requete);
         }
 
-        public  void Update(Filiere f )
+        public  int Update(Filiere f )
         {
             string Requete = "Update Filieres set Code ='"+f.Code+"',Titre ='"+f.Titre+"',Description='"+f.Description+"' where id ="+f.Id;
-            MyConnection.ExecuteNonQuery(Requete);
+            return MyConnection.ExecuteNonQuery(Requete);
         }
 
-        public  void Delete(int id)
+        public  int Delete(int id)
         {
             string Requete = "Delete From Filieres where id="+id;
-            MyConnection.ExecuteNonQuery(Requete);
+            return MyConnection.ExecuteNonQuery(Requete);
         }
 
         public  List<Filiere> Select()
@@ -53,18 +54,21 @@ namespace CompetencePlus.PackageFilieres
             read.Read();
             Filiere f = new Filiere();
             f.Id = read.GetInt32(0);
-            f.Code = read.GetString(1);
-            f.Titre = read.GetString(2);
+            f.Code = read.GetString(2);
+            f.Titre = read.GetString(1);
+            f.Description = read.GetString(3);
             return f;
         }
         public Filiere FindByName(string Name)
         {
-            string Requete = "Select * from Filieres where Nom=" + Name;
+            string Requete = "Select * from Filieres where Titre='" + Name+"'";
             OleDbDataReader read = MyConnection.ExecuteReader(Requete);
+            read.Read();
             Filiere f = new Filiere();
             f.Id = read.GetInt32(0);
-            f.Code = read.GetString(1);
-            f.Titre = read.GetString(2);
+            f.Code = read.GetString(2);
+            f.Titre = read.GetString(1);
+            f.Description = read.GetString(3);
             return f;
         }
 

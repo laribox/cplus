@@ -320,6 +320,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FormGestionFiliere";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestion des filières";
             this.Load += new System.EventHandler(this.FormGestionFiliere_Load);
             this.groupBox1.ResumeLayout(false);

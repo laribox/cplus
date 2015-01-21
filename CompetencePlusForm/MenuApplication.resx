@@ -120,4 +120,472 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="séancesToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 22</value>
+  </data>
+  <data name="séancesToolStripMenuItem2.Text" xml:space="preserve">
+    <value>Séances</value>
+  </data>
+  <data name="séquencesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 22</value>
+  </data>
+  <data name="séquencesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Séquences</value>
+  </data>
+  <data name="mesEmploisDeTempsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 22</value>
+  </data>
+  <data name="mesEmploisDeTempsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Mes emplois de temps</value>
+  </data>
+  <data name="séancesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 20</value>
+  </data>
+  <data name="séancesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Séances</value>
+  </data>
+  <data name="suiviToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 20</value>
+  </data>
+  <data name="suiviToolStripMenuItem.Text" xml:space="preserve">
+    <value>Notes et suivi</value>
+  </data>
+  <data name="gestionIndividuToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 20</value>
+  </data>
+  <data name="gestionIndividuToolStripMenuItem.Text" xml:space="preserve">
+    <value>Stagiaires</value>
+  </data>
+  <data name="formationsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 20</value>
+  </data>
+  <data name="formationsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Formations</value>
+  </data>
+  <data name="pédagogieToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 20</value>
+  </data>
+  <data name="pédagogieToolStripMenuItem.Text" xml:space="preserve">
+    <value>Pédagogie</value>
+  </data>
+  <data name="gestionDinformationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 20</value>
+  </data>
+  <data name="gestionDinformationToolStripMenuItem.Text" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="dataBaseManagementToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 20</value>
+  </data>
+  <data name="dataBaseManagementToolStripMenuItem.Text" xml:space="preserve">
+    <value>DataBase Management</value>
+  </data>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>841, 24</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gestionDesCompétencesDesStagiairesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 22</value>
+  </data>
+  <data name="gestionDesCompétencesDesStagiairesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Compétences des stagiaires</value>
+  </data>
+  <data name="gestionDesNotesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 22</value>
+  </data>
+  <data name="gestionDesNotesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="absencesDesStagiairesToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 22</value>
+  </data>
+  <data name="absencesDesStagiairesToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Absences des stagiaires</value>
+  </data>
+  <data name="gérerStagiaireToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 22</value>
+  </data>
+  <data name="gérerStagiaireToolStripMenuItem.Text" xml:space="preserve">
+    <value>Gestion stagiaires</value>
+  </data>
+  <data name="ajouterUneInscriptionToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 22</value>
+  </data>
+  <data name="ajouterUneInscriptionToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Ajouter une inscription</value>
+  </data>
+  <data name="validationDesInscriptionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 22</value>
+  </data>
+  <data name="validationDesInscriptionToolStripMenuItem.Text" xml:space="preserve">
+    <value>Validation des inscription</value>
+  </data>
+  <data name="gestionDesFormationsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 22</value>
+  </data>
+  <data name="gestionDesFormationsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Formations</value>
+  </data>
+  <data name="prévisionSéancesToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 22</value>
+  </data>
+  <data name="prévisionSéancesToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Prévision des séances</value>
+  </data>
+  <data name="prévisionSéquencesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="prévisionSéquencesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Prévision séquences</value>
+  </data>
+  <data name="affectationDesModulesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 22</value>
+  </data>
+  <data name="affectationDesModulesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ajouter une formation</value>
+  </data>
+  <data name="bilanDeCompétencesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 22</value>
+  </data>
+  <data name="bilanDeCompétencesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Bilan des compétences</value>
+  </data>
+  <data name="annéesDeFormationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 22</value>
+  </data>
+  <data name="annéesDeFormationToolStripMenuItem.Text" xml:space="preserve">
+    <value>Années de formation</value>
+  </data>
+  <data name="compétencesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 22</value>
+  </data>
+  <data name="compétencesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Modules et compétences</value>
+  </data>
+  <data name="modulesToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="modulesToolStripMenuItem2.Text" xml:space="preserve">
+    <value>Modules</value>
+  </data>
+  <data name="précisionsToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="précisionsToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Précisions</value>
+  </data>
+  <data name="gérerFiliereToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 22</value>
+  </data>
+  <data name="gérerFiliereToolStripMenuItem.Text" xml:space="preserve">
+    <value>Filières</value>
+  </data>
+  <data name="gestionDesGroupesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 22</value>
+  </data>
+  <data name="gestionDesGroupesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Groupes</value>
+  </data>
+  <data name="sallesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 22</value>
+  </data>
+  <data name="sallesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Salles</value>
+  </data>
+  <data name="lesSallesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="lesSallesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Les salles</value>
+  </data>
+  <data name="catégogieDesSallesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="catégogieDesSallesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Catégogie des salles</value>
+  </data>
+  <data name="séancesToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 22</value>
+  </data>
+  <data name="séancesToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Séances</value>
+  </data>
+  <data name="lesSéancesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 22</value>
+  </data>
+  <data name="lesSéancesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Les séances</value>
+  </data>
+  <data name="catégogieDactivitéToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 22</value>
+  </data>
+  <data name="catégogieDactivitéToolStripMenuItem.Text" xml:space="preserve">
+    <value>Catégogie des activité</value>
+  </data>
+  <data name="compétenceToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 22</value>
+  </data>
+  <data name="compétenceToolStripMenuItem.Text" xml:space="preserve">
+    <value>Compétence</value>
+  </data>
+  <data name="niveauxDesCompétencesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 22</value>
+  </data>
+  <data name="niveauxDesCompétencesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Niveaux des compétences</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>841, 399</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value> CompétencePlus</value>
+  </data>
+  <data name="&gt;&gt;séancesToolStripMenuItem.Name" xml:space="preserve">
+    <value>séancesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;séancesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;séancesToolStripMenuItem2.Name" xml:space="preserve">
+    <value>séancesToolStripMenuItem2</value>
+  </data>
+  <data name="&gt;&gt;séancesToolStripMenuItem2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;séquencesToolStripMenuItem.Name" xml:space="preserve">
+    <value>séquencesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;séquencesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mesEmploisDeTempsToolStripMenuItem.Name" xml:space="preserve">
+    <value>mesEmploisDeTempsToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;mesEmploisDeTempsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;suiviToolStripMenuItem.Name" xml:space="preserve">
+    <value>suiviToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;suiviToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gestionDesCompétencesDesStagiairesToolStripMenuItem.Name" xml:space="preserve">
+    <value>gestionDesCompétencesDesStagiairesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;gestionDesCompétencesDesStagiairesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gestionDesNotesToolStripMenuItem.Name" xml:space="preserve">
+    <value>gestionDesNotesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;gestionDesNotesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;absencesDesStagiairesToolStripMenuItem1.Name" xml:space="preserve">
+    <value>absencesDesStagiairesToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;absencesDesStagiairesToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gestionIndividuToolStripMenuItem.Name" xml:space="preserve">
+    <value>gestionIndividuToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;gestionIndividuToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gérerStagiaireToolStripMenuItem.Name" xml:space="preserve">
+    <value>gérerStagiaireToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;gérerStagiaireToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ajouterUneInscriptionToolStripMenuItem1.Name" xml:space="preserve">
+    <value>ajouterUneInscriptionToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;ajouterUneInscriptionToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;validationDesInscriptionToolStripMenuItem.Name" xml:space="preserve">
+    <value>validationDesInscriptionToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;validationDesInscriptionToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formationsToolStripMenuItem.Name" xml:space="preserve">
+    <value>formationsToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;formationsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gestionDesFormationsToolStripMenuItem.Name" xml:space="preserve">
+    <value>gestionDesFormationsToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;gestionDesFormationsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;prévisionSéancesToolStripMenuItem1.Name" xml:space="preserve">
+    <value>prévisionSéancesToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;prévisionSéancesToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;prévisionSéquencesToolStripMenuItem.Name" xml:space="preserve">
+    <value>prévisionSéquencesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;prévisionSéquencesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pédagogieToolStripMenuItem.Name" xml:space="preserve">
+    <value>pédagogieToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;pédagogieToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;affectationDesModulesToolStripMenuItem.Name" xml:space="preserve">
+    <value>affectationDesModulesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;affectationDesModulesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bilanDeCompétencesToolStripMenuItem.Name" xml:space="preserve">
+    <value>bilanDeCompétencesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;bilanDeCompétencesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gestionDinformationToolStripMenuItem.Name" xml:space="preserve">
+    <value>gestionDinformationToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;gestionDinformationToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;annéesDeFormationToolStripMenuItem.Name" xml:space="preserve">
+    <value>annéesDeFormationToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;annéesDeFormationToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;compétencesToolStripMenuItem.Name" xml:space="preserve">
+    <value>compétencesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;compétencesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;modulesToolStripMenuItem2.Name" xml:space="preserve">
+    <value>modulesToolStripMenuItem2</value>
+  </data>
+  <data name="&gt;&gt;modulesToolStripMenuItem2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;précisionsToolStripMenuItem1.Name" xml:space="preserve">
+    <value>précisionsToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;précisionsToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gérerFiliereToolStripMenuItem.Name" xml:space="preserve">
+    <value>gérerFiliereToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;gérerFiliereToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gestionDesGroupesToolStripMenuItem.Name" xml:space="preserve">
+    <value>gestionDesGroupesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;gestionDesGroupesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sallesToolStripMenuItem.Name" xml:space="preserve">
+    <value>sallesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;sallesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lesSallesToolStripMenuItem.Name" xml:space="preserve">
+    <value>lesSallesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;lesSallesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;catégogieDesSallesToolStripMenuItem.Name" xml:space="preserve">
+    <value>catégogieDesSallesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;catégogieDesSallesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;séancesToolStripMenuItem1.Name" xml:space="preserve">
+    <value>séancesToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;séancesToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lesSéancesToolStripMenuItem.Name" xml:space="preserve">
+    <value>lesSéancesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;lesSéancesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;catégogieDactivitéToolStripMenuItem.Name" xml:space="preserve">
+    <value>catégogieDactivitéToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;catégogieDactivitéToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;compétenceToolStripMenuItem.Name" xml:space="preserve">
+    <value>compétenceToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;compétenceToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;niveauxDesCompétencesToolStripMenuItem.Name" xml:space="preserve">
+    <value>niveauxDesCompétencesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;niveauxDesCompétencesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataBaseManagementToolStripMenuItem.Name" xml:space="preserve">
+    <value>dataBaseManagementToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;dataBaseManagementToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MenuApplication</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

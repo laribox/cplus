@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementationDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>0</Id>
+  <DateCreation>2015-01-21T12:32:38.914322+01:00</DateCreation>
+  <Titre>update-modules-set</Titre>
+  <Code>2015121123238-update-modules-set</Code>
+  <Increment>update modules set strategieEnseignement = 'test',apprentisage='test',evaluation='test',materiel='test',equipement='test',competence='test',presentation='test',description='test',code='test' where id=1</Increment>
+</IncrementationDB>

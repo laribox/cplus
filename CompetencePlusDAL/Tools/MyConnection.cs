@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data.OleDb;
+using ADOX; //Requires Microsoft ADO Ext. 2.8 for DDL and Security
+
  
 
-namespace CompetencePlus.Outils
+namespace CompetencePlus.Tools
 {
     /// <summary>
     /// Il permet de se connecter avec la base de données et d'exécuter les requêtes SQL
@@ -14,11 +16,12 @@ namespace CompetencePlus.Outils
     {   
         public static OleDbConnection Connection;
         public static OleDbCommand Command;
+        public static String DataBaseName = "db_cplus";
 
         ///  En mode développement la base de données doit être installé dans le chemin suivant "C:\db_cplus\db_cplus.accdb"
         ///  En mode déploiement la base de données doit être installer dans le répertoire projet
         /// string ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\\CompétencePlus.accdb;Persist Security Info=True";
-        static string ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source= C:\db_cplus\db_cplus.accdb;Persist Security Info=True";
+        static string ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\\db_cplus.accdb;Persist Security Info=True";
 
         
         
@@ -26,15 +29,15 @@ namespace CompetencePlus.Outils
         /// Exécuter les requêtes SQL : Update, Delete, Insert
         /// </summary>
         /// <param name="Requete">La requête SQL à exécuter</param>
-        public static void ExecuteNonQuery(string Requete)
+        public static int ExecuteNonQuery(string Requete)
         {
-
             Connection = new OleDbConnection(ConnectionString);
             Command = Connection.CreateCommand();
             Command.CommandText = Requete;
             Connection.Open();
-            Command.ExecuteNonQuery();
+            int result =  Command.ExecuteNonQuery();
             Connection.Close();
+            return result;
         }
         /// <summary>
         /// Exécute la requête SQL : Select
@@ -55,6 +58,14 @@ namespace CompetencePlus.Outils
         /// </summary>
         public static void Close (){
             Connection.Close();
-          }
+        }
+
+        
+
+   
+
+        
+
+
     }
 }

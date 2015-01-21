@@ -13,6 +13,21 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -36,8 +51,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -51,6 +66,27 @@
     </Compile>
     <Compile Include="MenuApplication.designer.cs">
       <DependentUpon>MenuApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackageAbsences\Class2.cs" />
+    <Compile Include="PackageAnneeFormations\Class2.cs" />
+    <Compile Include="PackageDB\FormGestionDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackageDB\FormGestionDB.Designer.cs">
+      <DependentUpon>FormGestionDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackageEmploisTemps\Class2.cs" />
+    <Compile Include="PackageEmploisTemps\FormAjouterEmploitemps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackageEmploisTemps\FormAjouterEmploitemps.Designer.cs">
+      <DependentUpon>FormAjouterEmploitemps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackageEmploisTemps\formSeancePlanning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackageEmploisTemps\formSeancePlanning.Designer.cs">
+      <DependentUpon>formSeancePlanning.cs</DependentUpon>
     </Compile>
     <Compile Include="PackageFilieres\FormFiliere.cs">
       <SubType>Form</SubType>
@@ -70,6 +106,9 @@
     <Compile Include="PackageFilieres\FormUpdateFiliere.designer.cs">
       <DependentUpon>FormUpdateFiliere.cs</DependentUpon>
     </Compile>
+    <Compile Include="PackageFormateurs\Class2.cs" />
+    <Compile Include="PackageFormations\Class2.cs" />
+    <Compile Include="PackageGroupes\Class1.cs" />
     <Compile Include="PackageGroupes\FormGestionGroupes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +127,51 @@
     <Compile Include="PackageGroupes\FormUpdateGroupe.designer.cs">
       <DependentUpon>FormUpdateGroupe.cs</DependentUpon>
     </Compile>
+    <Compile Include="PackageModules\Class2.cs" />
+    <Compile Include="PackageModules\FormeGestionModules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackageModules\FormeGestionModules.designer.cs">
+      <DependentUpon>FormeGestionModules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackageModules\FormeModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackageModules\FormeModule.designer.cs">
+      <DependentUpon>FormeModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackageNotes\FormControle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackageNotes\FormControle.Designer.cs">
+      <DependentUpon>FormControle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackageNotes\FormGestionControle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackageNotes\FormGestionControle.Designer.cs">
+      <DependentUpon>FormGestionControle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackageNotes\FormGestionNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackageNotes\FormGestionNote.Designer.cs">
+      <DependentUpon>FormGestionNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackagePrecision\FormeGestionPrecision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackagePrecision\FormeGestionPrecision.designer.cs">
+      <DependentUpon>FormeGestionPrecision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackagePrecision\FormPrecision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackagePrecision\FormPrecision.designer.cs">
+      <DependentUpon>FormPrecision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackagePrevisionSeances\Class2.cs" />
+    <Compile Include="PackageSeances\Class2.cs" />
     <Compile Include="PackageStagiaires\FormGestionInscription.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,10 +202,34 @@
     <Compile Include="PackageStagiaires\FormUpdateStagiaires.designer.cs">
       <DependentUpon>FormUpdateStagiaires.cs</DependentUpon>
     </Compile>
+    <Compile Include="PakageContenuPrecision\FormGestionContenuPrecision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PakageContenuPrecision\FormGestionContenuPrecision.Designer.cs">
+      <DependentUpon>FormGestionContenuPrecision.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControltime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControltime.Designer.cs">
+      <DependentUpon>UserControltime.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MenuApplication.fr.resx">
+      <DependentUpon>MenuApplication.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuApplication.resx">
       <DependentUpon>MenuApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackageDB\FormGestionDB.resx">
+      <DependentUpon>FormGestionDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackageEmploisTemps\FormAjouterEmploitemps.resx">
+      <DependentUpon>FormAjouterEmploitemps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackageEmploisTemps\formSeancePlanning.resx">
+      <DependentUpon>formSeancePlanning.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PackageFilieres\FormFiliere.resx">
       <DependentUpon>FormFiliere.cs</DependentUpon>
@@ -141,6 +249,18 @@
     <EmbeddedResource Include="PackageGroupes\FormUpdateGroupe.resx">
       <DependentUpon>FormUpdateGroupe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PackageModules\FormeGestionModules.resx">
+      <DependentUpon>FormeGestionModules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackageModules\FormeModule.resx">
+      <DependentUpon>FormeModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackagePrecision\FormeGestionPrecision.resx">
+      <DependentUpon>FormeGestionPrecision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackagePrecision\FormPrecision.resx">
+      <DependentUpon>FormPrecision.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PackageStagiaires\FormGestionInscription.resx">
       <DependentUpon>FormGestionInscription.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,6 +276,9 @@
     <EmbeddedResource Include="PackageStagiaires\FormUpdateStagiaires.resx">
       <DependentUpon>FormUpdateStagiaires.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PakageContenuPrecision\FormGestionContenuPrecision.resx">
+      <DependentUpon>FormGestionContenuPrecision.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -166,8 +289,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControltime.resx">
+      <DependentUpon>UserControltime.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\CompetencePlus.PackageAnneeFormations.AnneeFormation.datasource" />
+    <None Include="Properties\DataSources\CompetencePlus.PackageDB.IncrementationDB.datasource" />
+    <None Include="Properties\DataSources\CompetencePlus.PackageEmploisTemps.Seanceplanning.datasource" />
     <None Include="Properties\DataSources\CompetencePlus.PackageFilieres.Filiere.datasource" />
+    <None Include="Properties\DataSources\CompetencePlus.PackageFormations.Formation.datasource" />
     <None Include="Properties\DataSources\CompetencePlus.PackageGroupes.Groupe.datasource" />
+    <None Include="Properties\DataSources\CompetencePlus.PackageModules.Module.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -211,6 +342,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PackageSalles\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

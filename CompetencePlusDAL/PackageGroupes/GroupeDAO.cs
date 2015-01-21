@@ -5,27 +5,29 @@ using System.Text;
 using System.Data.OleDb;
 using CompetencePlus.Outils;
 using CompetencePlus.PackageFilieres;
+using CompetencePlus.Tools;
 
 namespace CompetencePlus.PackageGroupes
 {
     public class GroupeDAO : IGestion<Groupe>
     {
-        public  void Add(Groupe g)
+        public  int Add(Groupe g)
         {
             string Requete = "Insert into Groupes(Nom,Code,Description,idFiliere) values ('" +g.Nom  + "','" +g.Code+ "','" + g.Description +"',"+g.Filiere.Id +")";
-            MyConnection.ExecuteNonQuery(Requete);
+            return MyConnection.ExecuteNonQuery(Requete);
+
         }
 
-        public  void Update(Groupe g)
+        public  int Update(Groupe g)
         {
             string Requete = "Update Filieres set Code ='" + g.Code + "',Nom ='" + g.Nom +"',Description='"+g.Description+"',IdFiliere="+g.Filiere.Id+" where id =" + g.Id;
-            MyConnection.ExecuteNonQuery(Requete);
+            return MyConnection.ExecuteNonQuery(Requete);
         }
 
-        public  void Delete(int id)
+        public  int  Delete(int id)
         {
             string Requete = "Delete From Groupes where id=" + id;
-            MyConnection.ExecuteNonQuery(Requete);
+            return MyConnection.ExecuteNonQuery(Requete);
         }
 
         public  List<Groupe> Select()
