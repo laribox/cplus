@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementationDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>0</Id>
+  <DateCreation>2015-01-21T12:40:12.122244+01:00</DateCreation>
+  <Titre>alter-table-precisions</Titre>
+  <Code>2015121124012-alter-table-precisions</Code>
+  <Increment>alter table precisions 
+add constraint fkmoduleprecisions foreign key (modules_id) references modules(id);</Increment>
+</IncrementationDB>
