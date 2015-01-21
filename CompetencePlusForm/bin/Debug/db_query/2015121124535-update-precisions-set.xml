@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementationDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>0</Id>
+  <DateCreation>2015-01-21T12:45:35.6077463+01:00</DateCreation>
+  <Titre>update-precisions-set</Titre>
+  <Code>2015121124535-update-precisions-set</Code>
+  <Increment>update precisions set modules_id=1 where id=1</Increment>
+</IncrementationDB>

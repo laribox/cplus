@@ -19,7 +19,7 @@ namespace CompetencePlus.PackageModules
           OleDbDataReader da = MyConnection.ExecuteReader(req);
           while (da.Read())
           {
-              m.Add(new Module(da.GetInt32(0), new PackageFilieres.FiliereDAO().FindById(da.GetInt32(1)), new PackagePrecision.PrecisionDAO().FindById(da.GetInt32(2)), da.GetString(3), da.GetInt32(4), da.GetString(5), da.GetString(6), da.GetString(7), da.GetString(8), da.GetString(8), da.GetString(9), da.GetString(10), da.GetString(11)));
+              m.Add(new Module(da.GetInt32(0), new PackageFilieres.FiliereDAO().FindById(da.GetInt32(1)), da.GetString(2), da.GetInt32(3), da.GetString(4), da.GetString(5), da.GetString(6), da.GetString(7), da.GetString(8), da.GetString(9), da.GetString(10), da.GetString(11), da.GetString(12)));
           }
           MyConnection.Close();
           return m.ElementAt(0);
@@ -32,8 +32,8 @@ namespace CompetencePlus.PackageModules
           OleDbDataReader da = MyConnection.ExecuteReader(req);
           while (da.Read())
           {
-              
-              liste.Add(new Module(da.GetInt32(0), new PackageFilieres.FiliereDAO().FindById(da.GetInt32(1)), new PackagePrecision.PrecisionDAO().FindById(da.GetInt32(2)), da.GetString(3), da.GetInt32(4), da.GetString(5), da.GetString(6), da.GetString(7), da.GetString(8), da.GetString(8), da.GetString(9), da.GetString(10), da.GetString(11)));
+
+              liste.Add(new Module(da.GetInt32(0), new PackageFilieres.FiliereDAO().FindById(da.GetInt32(1)), da.GetString(2), da.GetInt32(3), da.GetString(4), da.GetString(5), da.GetString(6), da.GetString(7), da.GetString(8), da.GetString(9), da.GetString(10), da.GetString(11), da.GetString(12)));
               
           }
         
@@ -44,39 +44,63 @@ namespace CompetencePlus.PackageModules
 
       public int Add(Module o)
       {
-          string req = "insert into [Modules](id,nom,duree,strategieEnseignement,apprentisage,evaluation,materiel,equipement,competence,presentation,description) values("+o.ID+",'"+o.Nom+"',"+o.Duree+",'"+o.StrategieEnseignement+"','"+o.Apprentisage+"','"+o.Evaluation+"','"+o.Materiel+"','"+o.Equipement+"','"+o.Competence+"','"+o.Presentation+"','"+o.Description+"')";
-          return  MyConnection.ExecuteNonQuery(req);
+
+          
+          string req = "insert into [Modules](Filiere_id,nom,duree,strategieEnseignement,apprentisage,evaluation,materiel,equipement,competence,presentation,description,Code,Precision_id) values("  + o.Id_f.Id + ",'" + o.Nom + "'," + o.Duree + ",'" + o.StrategieEnseignement + "','" + o.Apprentisage + "','" + o.Evaluation + "','" + o.Materiel + "','" + o.Equipement + "','" + o.Competence + "','" + o.Presentation + "','" + o.Description + "','" + o.Code + "',"+1+")";
+          return MyConnection.ExecuteNonQuery(req);
+
       }
       
       public int Update(Module o)
       {
-          throw new NotImplementedException();
+
+          
+          string req = "update [Modules] set Filiere_id =" + o.Id_f.Id + ",nom = '" + o.Nom + "', duree = " + o.Duree + ",strategieEnseignement = '" + o.StrategieEnseignement + "',apprentisage = '" + o.Apprentisage + "', evaluation = '" + o.Evaluation + "',materiel = '" + o.Materiel + "',equipement = '" + o.Equipement + "',competence = '" + o.Competence + "',presentation = '" + o.Presentation + "',description = '" + o.Description + "',Code = '" + o.Code + "',Precision_id =" + 1 +" where id = "+o.ID;
+         return MyConnection.ExecuteNonQuery(req);
       }
 
       public int Delete(int id)
       {
-          string req = "delete from [Module] where id = " + id;
+          
+
+          string req = "delete from [Modules] where id = " + id;
           return MyConnection.ExecuteNonQuery(req);
+
       }
 
       public Module FindById(int id)
       {
-          throw new NotImplementedException();
+          List<Module> liste = new List<Module>();
+          string req = "select * from Modules where id = " + id;
+          OleDbDataReader da = MyConnection.ExecuteReader(req);
+          while (da.Read())
+          {
+
+              liste.Add(new Module(da.GetInt32(0), new PackageFilieres.FiliereDAO().FindById(da.GetInt32(1)), da.GetString(2), da.GetInt32(3), da.GetString(4), da.GetString(5), da.GetString(6), da.GetString(7), da.GetString(8), da.GetString(9), da.GetString(10), da.GetString(11), da.GetString(12)));
+          }
+
+          MyConnection.Close();
+          return liste.ElementAt(0);
       }
 
       public List<Module> findbyname(Module m)
       {
-          string req = "select * from [module]";
-          if (m.Nom != "" || m.Description != null || m.Duree != 0)
+          string req = "select * from [modules]";
+          if (m.Nom != "" || m.Description != "" || m.Id_f.Id !=0||m.Duree != 0)
           {
               req += " where ";
           }
           bool and = false;
-          if (m.Nom != null)
+          if (m.Nom != "")
           {
-              req += "nom like '%" + m.Nom + "%'";
-              and=true;
+              req += " nom like '%" + m.Nom + "%'";
+              and = true;
           }
+          if(m.Id_f.Id!=0){
+              req += " and Filiere_id like '%" + m.Id_f.Id + "%'";
+              and = true;
+          }
+          
           if (m.Description != null)
           {
               if (and)
@@ -97,10 +121,25 @@ namespace CompetencePlus.PackageModules
           while (da.Read())
           {
 
-              liste.Add(new Module(da.GetInt32(0), new PackageFilieres.FiliereDAO().FindById(da.GetInt32(1)), new PackagePrecision.PrecisionDAO().FindById(da.GetInt32(2)), da.GetString(3), da.GetInt32(4), da.GetString(5), da.GetString(6), da.GetString(7), da.GetString(8), da.GetString(8), da.GetString(9), da.GetString(10), da.GetString(11)));
+              liste.Add(new Module(da.GetInt32(0), new PackageFilieres.FiliereDAO().FindById(da.GetInt32(1)), da.GetString(2), da.GetInt32(3), da.GetString(4), da.GetString(5), da.GetString(6), da.GetString(7), da.GetString(8), da.GetString(9), da.GetString(10), da.GetString(11), da.GetString(12)));
           }
           return liste;
       }
-     
+
+
+      //int IGestion<Module>.Add(Module o)
+      //{
+      //    throw new NotImplementedException();
+      //}
+
+      //int IGestion<Module>.Update(Module o)
+      //{
+      //    throw new NotImplementedException();
+      //}
+
+      //int IGestion<Module>.Delete(int id)
+      //{
+      //    throw new NotImplementedException();
+      //}
     }
 }
